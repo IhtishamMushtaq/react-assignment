@@ -9,7 +9,7 @@ const Card = ({ data }) => {
       <div className={styles.imageContainer}>
         <img className={styles.heroImage} src={data.img} alt="heroImage" />
         <p className={styles.contents}>Birthday : {data.birthday}</p>
-        <p className={styles.contents}>Birthday : {data.status}</p>
+        <p className={styles.contents}>Status : {data.status}</p>
         <p className={styles.contents}>Portrayed : {data.portrayed}</p>
       </div>
     </div>
