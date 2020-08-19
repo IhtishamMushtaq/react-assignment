@@ -1,3 +1,9 @@
+.top {
+  text-transform: uppercase;
+  color: darkslategray;
+  justify-content: center;
+  text-align: center;
+}
 .container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 70%;
@@ -36,4 +42,15 @@
 }
 .contents {
   color: rgb(22, 21, 21);
+}
+.load {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.load p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
 }

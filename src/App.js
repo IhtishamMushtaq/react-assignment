@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import Card from "./card";
-
+import styles from "./card.module.css";
 class App extends React.Component {
   state = {
     values: [],
@@ -21,10 +21,15 @@ class App extends React.Component {
   render() {
     var { isLoaded } = this.state;
     if (!isLoaded) {
-      return <div>Loading</div>;
+      return (
+        <div className={styles.load}>
+          <p>Loading...</p>
+        </div>
+      );
     } else {
       return (
         <div>
+          <h1 className={styles.top}>Breaking Bad</h1>
           {this.state.values.map((obj) => (
             <Card data={obj} />
           ))}
